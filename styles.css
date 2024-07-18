@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+#container{
+	margin:20px;
+	
+}
+
+To achieve the layout with special text before and after a container element, you can use CSS pseudo-elements ::before and ::after. Below is the CSS code to accomplish this:
+
+css
+Copy code
+#container {
+    margin: 20px;
+    position: relative; /* Ensure the pseudo-elements are positioned relative to the container */
+}
+
+#container::after {
+    content: "After Element"; 
+    color: #f00;
+    font-size: 20px;
+    display: block; 
+    text-align: center;
+}
+
+#container::before {
+	content:"Before Element";
+	color:#f00;
+	font-size:20px;
+	display:block-axis
+}
